@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 7vh 0 7vh;
+    gap: 5vh;
+
+    img {
+        background-color: black;
+        width: 15%;
+        height: 10%;
+        object-fit: cover;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            li {
+                font-size: 16px;
+              
+                
+                a {
+                    color: #6A6A6A;
+                    
+                    &:hover {
+                       color: #171717;
+                    }
+                }
+
+                button {
+                    border-radius: 50px;
+                    margin-right: 10vh;
+                    padding: 16px 40px;
+                    background-color: #161616;
+                    color: white;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    #getInTouch {
+        display: flex;
+        align-items: center;
+
+        div:nth-child(1) {
+            background-color: #e9a233;
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-left: 3vh;
+            margin-right: 3vh;
+        }
+
+        i {
+            transform: rotate(270deg);
+            padding: 2vh;
+            color: white;
+        }
+
+        button {
+            background-color: #e9a233;
+            padding: 3vh 5vh;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
+
+main {
+
+    #upBanner {
+        color: white;
+        height: 100vh;
+        
+        img {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #upBannerHeader {
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            top: 25vh;
+            margin-left: 15vh;
+
+            h1 {
+                font-size: 70px;
+                width: 130vh;
+            }
+        }
+
+        #upBannerLinks {
+            a {
+                padding: 16px 40px;
+                background-color: #e9a233;
+                color: white;
+                border: none;
+
+                
+                &:nth-child(2) {
+                    background-color: white;
+                    color: #171717;
+                    margin-left: 2vh;
+                }
+            }
+        }
+    }
+
+    #serviceTypes {
+        display: flex;
+        justify-content: space-around;
+
+        #promisedOptions {
+            width: 55vh;
+            height: 55vh;
+            background-color: #161616;
+            background-image: url('/src/images/service-options/box-bg.jpg');
+            margin-top: 1.7vh;
+            z-index: -1;
+        }
+
+        #aboutCompany {
+            display: flex;
+            flex-direction: column;
+
+            #aboutCompanyMain {
+                img {
+                    width: 35vh;
+                    height: 35vh;
+                }
+
+                span {
+                    i {
+                        color: #e9a233;
+                        margin-right: 1vh;
+                    }
+                }
+            }
+
+            #aboutCompanyLast {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    border-radius: 10vh;
+                    width: 10vh;
+
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+
+    #aboutCompanyCards {
+        .aboutCompanyCard {
+
+        }
+    }
+
+    
+
+}
