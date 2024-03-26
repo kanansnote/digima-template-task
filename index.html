@@ -9,7 +9,10 @@
 </head>
 <body>
     <header>
-        <img src="./src/images/header/logo-wide-white.png" alt="Logo">
+        <div id="logo">
+            <img src="./src/images/header/logo-wide-white.png" alt="Logo">
+            <img src="./src/images/header/search.svg" alt="Search">
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -43,15 +46,15 @@
         </section>
         <section id="serviceTypes">
             <div id="promisedOptions">
-                <div>
+                <div class="promisedOption">
                     <img src="" alt="">
                     <h5>LEADER IN DIGITAL MARKETING</h5>
                 </div>
-                <div>
+                <div class="promisedOption">
                     <img src="" alt="">
                     <h5>FREE CONSULTATION WITH EXPERTS</h5>
                 </div>
-                <div>
+                <div class="promisedOption">
                     <img src="" alt="">
                     <h5>DID HIGH QUALITY PROJECTS</h5>
                 </div>
@@ -63,50 +66,54 @@
                 </div>
                 <div id="aboutCompanyMain">
                     <img src="./src/images/about-company/service-bg1-550x550.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Impedit vitae nesciunt sapiente delectus quam blanditiis exercitationem? 
-                        Numquam eligendi natus quos.</p>
-                    <span><i class="fas fa-check-circle"></i>Nolam vel suffered sit form</span>
-                    <span><i class="fas fa-check-circle"></i>Nolam vel suffered sit</span>
-                </div>
-                <div id="aboutCompanyLast">
-                    <img src="./src/images/about-company/testimonial-2-150x150.jpg" alt="">
-                    <div>
-                        <h5>DAVID MARTIN</h5>
-                        <p>Founder of company</p>
+                    <div id="aboutCompanyContent">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vitae nesciunt sapiente delectus quam blanditiis
+                            exercitationem? Numquam eligendi natus quos.
+                        </p>
+                        <div>
+                            <span><i class="fas fa-check-circle"></i>Nolam vel suffered sit form</span>
+                            <span><i class="fas fa-check-circle"></i>Nolam vel suffered sit</span>
+                        </div>
+                        <div id="aboutCompanyTestimonial">
+                            <img src="./src/images/about-company/testimonial-2-150x150.jpg" alt="">
+                            <div>
+                                <h5>DAVID MARTIN</h5>
+                                <p>Founder of company</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="aboutCompanyCards">
             <div class="aboutCompanyCard">
-                <img src="./src/images/about-company/service-bg1-550x550.jpg" alt="">
-                <div class="aboutCompanyIcons">
+                <img src="./src/images/about-company/service-bg1-1536x1024.jpg" alt="Service 1">
+                <div class="aboutCompanyDetails">
                     <img src="" alt="">
-                </div>
-                <div>
-                    <a href="#">Website Development</a>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <div>
+                        <a href="#">Website Development</a>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
                 </div>
             </div>
             <div class="aboutCompanyCard">
-                <img src="./src/images/about-company/project-bg4-1536x1024.jpg" alt="">
-                <div class="aboutCompanyIcons">
+                <img src="./src/images/about-company/project-bg4-1536x1024.jpg" alt="Service 2">
+                <div class="aboutCompanyDetails">
                     <img src="" alt="">
-                </div>
-                <div>
-                    <a href="#">Graphic Design</a>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <div>
+                        <a href="#">Graphic Design</a>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
                 </div>
             </div>
             <div class="aboutCompanyCard">
-                <img src="./src/images/about-company/service-bg2-1536x1024.jpg" alt="">
-                <div class="aboutCompanyIcons">
+                <img src="./src/images/about-company/service-bg2-1536x1024.jpg" alt="Service 3">
+                <div class="aboutCompanyDetails">
                     <img src="" alt="">
-                </div>
-                <div>
-                    <a href="#">Digital Marketing</a>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>   
+                    <div>
+                        <a href="#">Digital Marketing</a>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>   
+                    </div>
                 </div>
             </div>
         </section>
@@ -114,6 +121,80 @@
             <div id="offeredServiceHeader">
                 <h6>OUR SERVICES</h6>
                 <p>SERVICES WE OFFER</p>
+            </div>
+            <div id="offeredServiceCards">
+                <div class="offeredServiceCard">
+                    <h5></h5>
+                    <img src="" alt="">
+                </div>
+                <div class="offeredServiceCard">
+                    <h5></h5>
+                    <img src="" alt="">
+                </div>
+                <div class="offeredServiceCard">
+                    <h5></h5>
+                    <img src="" alt="">
+                </div>
+                <div class="offeredServiceCard">
+                    <h5></h5>
+                    <img src="" alt="">
+                </div>
+                <div class="offeredServiceCard">
+                    <h5></h5>
+                    <img src="" alt="">
+                </div>
+                <div class="offeredServiceCard">
+                    <h5></h5>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div id="readyToDevelopBanner">
+                <h2>We’re Ready Develop Your Site!</h2>
+                <a href="#">Explore Now</a>
+            </div>
+        </section>
+        <section id="ourFeedbacks">
+            <div id="ourFeedbacksHeader">
+                <h6>OUR FEEDBACKS</h6>
+                <span>WHAT THEY’RE TALKING?</span>
+                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+                    Aenean solldin, lorem is simply free text quis bibendum
+                </p>
+            </div>
+            <div id="ourFeedbacksCards">
+                <div class="ourFeedbacksCard">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <p></p>
+                    <div>
+                        <h5>Tina Brown</h5>
+                        <span>DESIGNER</span>
+                    </div>
+                </div>
+                <div class="ourFeedbacksCard">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <p></p>
+                    <div>
+                        <h5>Jessica Brown</h5>
+                        <span>DESIGNER</span>
+                    </div>
+                </div>
+                <div class="ourFeedbacksCard">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <p></p>
+                    <div>
+                        <h5>Mike Hardson</h5>
+                        <span>DESIGNER</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="workShowcase">
+            <div id="workShowcaseHeader">
+                <h6></h6>
+                <p></p>
             </div>
         </section>
     </main>
