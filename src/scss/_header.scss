@@ -1,0 +1,104 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vh;
+
+    #logo {
+        background-color: black;
+        padding: 5vh;
+        max-width: 25%;
+        max-height: 50%;
+
+        img {
+            width: 50%;
+            object-fit: contain;
+
+            &:nth-child(1) {
+                margin-left: 8vh;
+            }
+
+            &:nth-child(2) {
+                width: 15%;
+                margin-left: 2vh;
+                padding: 1vh;
+            }
+        }
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            li {
+                font-size: 16px;
+
+                a {
+                    color: #6A6A6A;
+
+                    &:hover {
+                        color: #171717;
+                    }
+                }
+            }
+        }
+    }
+
+    #getInTouch {
+        display: flex;
+        align-items: center;
+        margin-right: 3vh;
+
+        div:nth-child(1) {
+            background-color: #e9a233;
+            border-radius: 20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-left: 3vh;
+            margin-right: 3vh;
+        }
+
+        i {
+            transform: rotate(270deg);
+            padding: 2vh;
+            color: white;
+        }
+
+        a {
+            background-color: #e9a233;
+            padding: 3vh 5vh;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            overflow: hidden;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                background-color: #000;
+                transition: 0.2s ease-in-out;
+                z-index: -1;
+            }
+            
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}
