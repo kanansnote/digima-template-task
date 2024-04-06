@@ -10,3 +10,30 @@ a {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.aButtons {
+    padding: 3vh 5vh;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #000;
+        transition: 0.2s ease-in-out;
+        z-index: -1;
+    }
+    
+    &:hover::after {
+        width: 100%;
+    }
+}
