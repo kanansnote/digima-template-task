@@ -314,4 +314,43 @@ main #OfferedService #readyToDevelopBanner {
 }
 main #OfferedService #readyToDevelopBanner a {
   background-color: #e9a233;
+}
+main #OurFeedbacks {
+  display: flex;
+  align-items: center;
+  padding: 10vh;
+  background-image: url("../images/white-pattern-bg.jpg");
+  height: 70vh;
+}
+main #OurFeedbacks #ourFeedbacksHeader {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  gap: 2vh;
+}
+main #OurFeedbacks #ourFeedbacksHeader h6 {
+  font-size: 18px;
+  color: #e9a233;
+}
+main #OurFeedbacks #ourFeedbacksHeader span {
+  font-size: 36px;
+}
+main #OurFeedbacks #ourFeedbacksCards {
+  display: flex;
+}
+main #OurFeedbacks #ourFeedbacksCards .ourFeedbacksCard {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  gap: 2vh;
+  width: 40vh;
+  height: 30vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+main #OurFeedbacks #ourFeedbacksCards .ourFeedbacksCard img {
+  width: 10vh;
+  border-radius: 10vh;
+}
+main #OurFeedbacks #ourFeedbacksCards .ourFeedbacksCard .ourFeedbacksCardStars {
+  color: #fdc040;
 }/*# sourceMappingURL=style.css.map */

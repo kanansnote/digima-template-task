@@ -256,7 +256,49 @@ main {
     }
 
     #OurFeedbacks {
+        display: flex;
+        align-items: center;
+        padding: 10vh;
+        background-image: url('../images/white-pattern-bg.jpg');
+        height: 70vh;
+
         #ourFeedbacksHeader {
+            display: flex;
+            flex-direction: column;
+            width: 50vh;
+            gap: 2vh;
+            
+            h6 {
+                font-size: 18px;
+                color: #e9a233;
+            }
+
+            span {
+                font-size: 36px;
+            }
+        }
+
+        #ourFeedbacksCards {
+            display: flex;
+
+            .ourFeedbacksCard {
+                display: flex;
+                flex-direction: column;
+                padding: 5vh;
+                gap: 2vh;
+                width: 40vh;
+                height: 30vh;
+                box-shadow: 0 0 15px rgba(0,0,0,.05);
+                
+                img {
+                    width: 10vh;
+                    border-radius: 10vh;
+                }
+
+                .ourFeedbacksCardStars {
+                    color: #fdc040;
+                }
+            }
         }
     }
 
