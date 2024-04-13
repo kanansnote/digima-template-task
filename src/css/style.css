@@ -36,6 +36,15 @@ a {
   width: 100%;
 }
 
+.sectionHeader h3 {
+  font-size: 18px;
+  color: #e9a233;
+}
+.sectionHeader p {
+  font-size: 16px;
+  color: #717070;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -272,19 +281,15 @@ main #OfferedService #offeredServiceHeader {
   justify-content: space-between;
   font-weight: bold;
 }
-main #OfferedService #offeredServiceHeader #offeredServiceHeaderText {
+main #OfferedService #offeredServiceHeader .offeredServiceHeaderText {
   display: flex;
   flex-direction: column;
   margin-top: 3vh;
   gap: 1vh;
 }
-main #OfferedService #offeredServiceHeader #offeredServiceHeaderText h6 {
-  font-size: 18px;
-  color: #e9a233;
-}
-main #OfferedService #offeredServiceHeader #offeredServiceHeaderText p {
-  font-size: 36px;
+main #OfferedService #offeredServiceHeader .offeredServiceHeaderText h2 {
   color: white;
+  font-size: 26px;
 }
 main #OfferedService #offeredServiceHeader #offeredServiceHeaderCards {
   display: flex;
@@ -322,18 +327,14 @@ main #OurFeedbacks {
   background-image: url("../images/white-pattern-bg.jpg");
   height: 70vh;
 }
-main #OurFeedbacks #ourFeedbacksHeader {
+main #OurFeedbacks .ourFeedbacksHeader {
   display: flex;
   flex-direction: column;
   width: 50vh;
   gap: 2vh;
 }
-main #OurFeedbacks #ourFeedbacksHeader h6 {
-  font-size: 18px;
-  color: #e9a233;
-}
-main #OurFeedbacks #ourFeedbacksHeader span {
-  font-size: 36px;
+main #OurFeedbacks .ourFeedbacksHeader h2 {
+  font-size: 26px;
 }
 main #OurFeedbacks #ourFeedbacksCards {
   display: flex;
@@ -353,4 +354,49 @@ main #OurFeedbacks #ourFeedbacksCards .ourFeedbacksCard img {
 }
 main #OurFeedbacks #ourFeedbacksCards .ourFeedbacksCard .ourFeedbacksCardStars {
   color: #fdc040;
+}
+main #RecentWorkShowcase {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 0 0 10vh;
+  gap: 5vh;
+}
+main #RecentWorkShowcase .recentWorkShowcase-Header {
+  text-align: center;
+}
+main #RecentWorkShowcase .recentWorkShowcase-Header h2 {
+  font-size: 26px;
+}
+main #RecentWorkShowcase #recentWorkShowcase-Cards {
+  display: flex;
+}
+main #RecentWorkShowcase #recentWorkShowcase-Cards .recentWorkShowcase-Card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+main #RecentWorkShowcase #recentWorkShowcase-Cards .recentWorkShowcase-Card img {
+  width: 85%;
+  transition: 0.2s ease-in-out;
+}
+main #RecentWorkShowcase #recentWorkShowcase-Cards .recentWorkShowcase-Card img:hover {
+  transform: scale(1.05);
+  max-width: 100%;
+}
+main #RecentWorkShowcase #recentWorkShowcase-Cards .recentWorkShowcase-Card h1 {
+  position: relative;
+  bottom: 8vh;
+  left: 3vh;
+  color: white;
+}
+main #RecentWorkShowcase #recentWorkShowcase-Cards .recentWorkShowcase-Card h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: #e9a233;
+  color: white;
+  z-index: 110;
+}
+main #RecentWorkShowcase #recentWorkShowcase-Cards .recentWorkShowcase-Card h1:hover::after {
+  bottom: 10vh;
 }/*# sourceMappingURL=style.css.map */

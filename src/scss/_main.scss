@@ -201,20 +201,15 @@ main {
             justify-content: space-between;
             font-weight: bold;
 
-            #offeredServiceHeaderText {
+            .offeredServiceHeaderText {
                 display: flex;
                 flex-direction: column;
                 margin-top: 3vh;
                 gap: 1vh;
 
-                h6 {
-                    font-size: 18px;
-                    color: #e9a233;
-                }
-
-                p {
-                    font-size: 36px;
+                h2 {
                     color: white;
+                    font-size: 26px;
                 }
             }
 
@@ -262,19 +257,14 @@ main {
         background-image: url('../images/white-pattern-bg.jpg');
         height: 70vh;
 
-        #ourFeedbacksHeader {
+        .ourFeedbacksHeader {
             display: flex;
             flex-direction: column;
             width: 50vh;
             gap: 2vh;
-            
-            h6 {
-                font-size: 18px;
-                color: #e9a233;
-            }
 
-            span {
-                font-size: 36px;
+            h2 {
+                font-size: 26px;
             }
         }
 
@@ -298,6 +288,62 @@ main {
                 .ourFeedbacksCardStars {
                     color: #fdc040;
                 }
+            }
+        }
+    }
+
+    #RecentWorkShowcase {
+        display: flex;
+        flex-direction: column;
+        margin: 5vh 0 0 10vh;
+        gap: 5vh;
+
+        .recentWorkShowcase-Header {
+            text-align: center;
+            
+            h2 {
+                font-size: 26px;
+            }
+        }
+        
+        #recentWorkShowcase-Cards {
+            display: flex;
+
+            .recentWorkShowcase-Card {
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+
+                img {
+                    width: 85%;
+                    transition: 0.2s ease-in-out;
+                    
+                    &:hover {
+                        transform: scale(1.05);
+                        max-width: 100%;
+                    }
+                }
+
+                h1 {
+                    position: relative;
+                    bottom: 8vh;
+                    left: 3vh;
+                    color: white;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        background-color: #e9a233;
+                        color: white;
+                        z-index: 110;
+                    }
+
+                    &:hover::after {
+                        bottom: 10vh;
+                    }
+                }
+                
             }
         }
     }
