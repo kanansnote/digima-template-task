@@ -3,40 +3,56 @@ main {
     #UpBanner {
         color: white;
         height: 100vh;
-        background-image: url('../images/upbanner-bg.jpg');
+        background-image: url('../images/upbanner/upbanner-bg.jpg');
         background-size: contain;
         background-repeat: no-repeat;
-
-        img {
-            position: absolute;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        position: relative;
 
         #upBannerHeader {
             display: flex;
             flex-direction: column;
             gap: 5vh;
-            top: 25vh;
+            position: relative;
+            top: 20vh;
             margin-left: 15vh;
 
             h1 {
                 font-size: 70px;
                 width: 130vh;
             }
+
+            #upBannerLinks {
+
+                a {
+                    background-color: #e9a233;
+    
+                    &:nth-child(2) {
+                        background-color: white;
+                        color: #171717;
+                        margin-left: 2vh;
+                    }
+                }
+            }    
         }
+        
+        #upBannerShapes {
 
-        #upBannerLinks {
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
 
-            a {
-                background-color: #e9a233;
-
+                &:nth-child(1) {
+                    width: 80vh;
+                    height: 88.1vh;
+                    object-fit: cover;
+                }
+                
                 &:nth-child(2) {
-                    background-color: white;
-                    color: #171717;
-                    margin-left: 2vh;
+                    width: 40vh;
+                    height: 60vh;
+                    object-fit: cover;
+                    top: 30vh;
                 }
             }
         }
@@ -47,14 +63,47 @@ main {
         justify-content: space-evenly;
 
         #promisedOptions {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             color: white;
             margin-left: 4vh;
-            width: 66vh;
+            width: 60vh;
             height: 55vh;
             padding: 5vh;
             background-color: #161616;
             background-image: url('../images/box-bg.jpg');
-            z-index: -1;
+            background-repeat: no-repeat;
+
+            .promisedOption {
+                display: flex;
+                gap: 2vh;
+                align-items: center;
+                position: relative;
+                border-bottom: solid 1px #FFFFFF29;
+                padding-bottom: 3vh;
+
+                i {
+                    background-color: #e9a233;
+                    text-align: center;
+                    padding-top: 3vh;
+                    font-size: 28px;
+                    border-radius: 6vh;
+                    width: 10vh;
+                    height: 10vh;
+                    transition: 0.3s;
+
+                    &:hover {
+                        transform: rotateY(180deg);
+                        background-color: white;
+                        color: #e9a233;
+                    }
+                }
+
+                h5 {
+                    width: 50%;
+                }
+            }
         }
 
         #aboutCompany {
