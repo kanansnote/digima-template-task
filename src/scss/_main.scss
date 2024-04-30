@@ -28,7 +28,7 @@ main {
     
                     &:nth-child(2) {
                         background-color: white;
-                        color: #171717;
+                        color: var(--rich-black-color);
                         margin-left: 2vh;
                     }
                 }
@@ -209,14 +209,14 @@ main {
                     height: 5vh;
                     padding: 15px 20px 35px 15px;
                     background-color: white;
-                    border-top: solid 4px #171717;
+                    border-top: solid 4px var(--rich-black-color);
                     box-shadow: 5px 5px 5px 5px rgba(190, 186, 186, 0.75);
 
                     a {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        color: #171717;
+                        color: var(--rich-black-color);
                         font-weight: 600;
                         font-size: 18px;
                         text-transform: capitalize;
@@ -275,7 +275,7 @@ main {
 
         .offeredServiceCard {
             padding: 40px 30px 35px;
-            background-color: #171717;
+            background-color: var(--rich-black-color);
             color: white;
             width: 45vh;
             height: 20vh;
